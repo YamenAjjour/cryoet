@@ -1,3 +1,5 @@
 overlay
 train_results
 last_model.pth
+test
+resnet_output
