@@ -1,0 +1,27 @@
+{
+    "input": {
+        "predict_config": "copick.config",
+        "voxel_size": 10,
+        "tomogram_algorithm": "denoised"
+    },
+    "model_architecture": {
+        "n_class": 8,
+        "model_name": "res_unet",
+        "path_weights": "train_results/net_weights_FINAL.h5",
+        "patch_size": 160,
+        "model_filters": [
+            48,
+            64,
+            128
+        ],
+        "model_dropout": 0
+    },
+    "output": {
+        "user_id": "deepfindET",
+        "session_id": "0",
+        "output_scoremap": false,
+        "scoremap_name": "scoremap",
+        "segmentation_name": "predict",
+        "tomo_ids": null
+    }
+}
